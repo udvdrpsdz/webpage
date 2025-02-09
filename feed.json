@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "UDVDR - SDŽ",
+    "description": "",
+    "home_page_url": "https://udvdrpsdz.github.io/webpage",
+    "feed_url": "https://udvdrpsdz.github.io/webpage/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Autor"
+    },
+    "items": [
+    ]
+}
