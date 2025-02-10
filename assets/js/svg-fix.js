@@ -137,25 +137,48 @@ document.addEventListener('DOMContentLoaded', () => {
         //console.error('Error fetching HTML:', error);
     //});
     
-    fetch('https://page-views-counter.netlify.app/page_view?page=https://example.com/index.html/', {
+    //fetch('https://page-views-counter.netlify.app/page_view?page=https://example.com/index.html/', {
+        //method: "GET",
+        //headers: {
+          //Accept: "application/json",
+          //"Access-Control-Allow-Origin" : "*",
+          //"Content-Type": "text/plain",
+          //"User-Agent": "any-name"
+        //}
+    //})
+    //.then(response => {
+        //return response.text();
+    //})
+    //.then(html => {
+        //// Process the fetched HTML
+        //console.log("test3");  
+        //console.log(html);
+    //})
+    //.catch(error => {
+        //console.error('Error fetching HTML:', error);
+    //});
+    
+     //var current_page = window.location.href + 'index.html';
+     var current_page = window.location.href + 'index.html';
+     
+     console.log(current_page);
+        
+      fetch("/page_view?page=" + encodeURIComponent(current_page), {
         method: "GET",
         headers: {
-          Accept: "application/json",
-          "Access-Control-Allow-Origin" : "*",
-          "Content-Type": "text/plain",
-          "User-Agent": "any-name"
-        }
-    })
-    .then(response => {
-        return response.text();
-    })
-    .then(html => {
-        // Process the fetched HTML
-        console.log("test3");  
-        console.log(html);
-    })
-    .catch(error => {
-        console.error('Error fetching HTML:', error);
-    });
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+            
+          console.log(data);
+     
+          //var viewCount = data.data.view_count;
+          //document.getElementById("viewCountText").textContent = viewCount;
+          //var svg = document.querySelector("svg");
+          //svg.setAttribute("aria-label", "VIEW: " + viewCount);
+        })
+        .catch((error) => console.error("Error:", error));
     
 });
