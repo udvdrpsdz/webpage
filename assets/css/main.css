@@ -2006,6 +2006,8 @@ textarea {
   font-size: 0.8239746086rem;
   margin-top: var(--baseline);
   color: var(--textColorCustom);
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__copyright > *:first-child {
   margin: 0;
