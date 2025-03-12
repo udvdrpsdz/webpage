@@ -2257,6 +2257,12 @@ article.content > .hero > header.hero__content {
   line-height: var(--line-height);
 }
 
+.content__updated ,
+.content__actions ,
+.content__bio {
+  display: none;
+}
+
 /*
   --page-margin:6vw;
   --page-width:66rem;
