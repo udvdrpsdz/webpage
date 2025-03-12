@@ -2259,7 +2259,8 @@ article.content > .hero > header.hero__content {
 
 .content__updated ,
 .content__actions ,
-.content__bio {
+.content__bio ,
+.content__footer {
   display: none;
 }
 
