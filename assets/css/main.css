@@ -2309,6 +2309,10 @@ article.content {
                color: var(--colorCustom2);
 }
 
+article.content {
+    padding-bottom: calc(var(--baseline) * 12 + 1vw);
+}
+
 .feed a {
     color: var(--colorCustom2);
 }
@@ -2320,14 +2324,6 @@ article.content {
 .footer {
     margin: 0 auto 0;
 }
-
-.gallery {
-    margin: 0 0 0 0;
- }
- 
- .gallery {
-    padding: calc(var(--baseline) * 6 + 1vw) calc(var(--gallery-gap) * -1);
- }
     
 
 /*
