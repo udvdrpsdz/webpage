@@ -2260,9 +2260,32 @@ article.content > .hero > header.hero__content {
 .content__updated ,
 .content__actions ,
 .content__bio ,
-.content__footer {
+.content__footer,
+.feed__content > a   {
   display: none;
 }
+
+.feed {
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.feed__title > a {
+    color: var(--textColorCustom2); 
+}
+
+.feed__meta > a {
+    display: none;
+}
+
+.feed__date {
+    color: var(--textColorCustom2); 
+}
+
+.feed__author + .feed__date::before {
+    display: none;
+}
+    
 
 /*
   --page-margin:6vw;
