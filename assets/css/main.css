@@ -2235,9 +2235,11 @@ textarea {
     font-family: "Times New Roman", Times, serif;
     font-size: 26px;
 }
-.times > p {
+
+.naslov {
     margin-top: 0px;
 }
+
 .naslov {
     padding: 0px 80px 0px 80px;
 }
@@ -2324,7 +2326,33 @@ article.content {
 .footer {
     margin: 0 auto 0;
 }
-    
+
+.naslov2 {
+    margin: 1em auto 0;
+}
+
+.naslov3 { 
+    min-width: 2em; 
+}
+
+@media all and (min-width: 56.1875em) { /* kompjuter */
+  .naslov {
+    display:auto;
+  }
+  .naslov2 , .naslov3 {
+    display: none;
+  }
+}  
+
+@media all and (max-width:56.1875em) { /* mobitel */
+  .naslov {
+    display:none;
+  }
+  .naslov2 , .naslov3 {
+    display: auto;
+  }
+}
+
 
 /*
   --page-margin:6vw;
