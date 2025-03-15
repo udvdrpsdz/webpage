@@ -2230,6 +2230,7 @@ textarea {
   margin-right: auto;
   width:  100px;
   height: 126px;
+  margin-top: 6px;
 }
 .times{
     font-family: "Times New Roman", Times, serif;
