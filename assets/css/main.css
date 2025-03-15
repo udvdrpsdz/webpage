@@ -2352,7 +2352,12 @@ article.content {
     display: auto;
   }
 }
-
+*,
+*:before,
+*:after {
+  --link-color:#232417;
+  --link-color-hover:#636447;
+}
 
 /*
   --page-margin:6vw;
