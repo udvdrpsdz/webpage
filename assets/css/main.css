@@ -2275,7 +2275,8 @@ article.content > .hero > header.hero__content {
 .content__actions ,
 .content__bio ,
 .content__footer,
-.feed__content > a   {
+.feed__content > a,
+.content__related {
   display: none;
 }
 
